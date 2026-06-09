@@ -1,0 +1,38 @@
+DemoAgent self-demo command evidence
+Date: 2026-06-09
+Workspace: D:\Projects\demo_creater
+
+Command:
+Get-ChildItem -Recurse demo-agent-skill | ForEach-Object { $_.FullName.Replace('D:\Projects\demo_creater\','') }
+
+Observed result:
+demo-agent-skill\examples
+demo-agent-skill\outputs
+demo-agent-skill\templates
+demo-agent-skill\workflow
+demo-agent-skill\AGENTS.md
+demo-agent-skill\README.md
+demo-agent-skill\SKILL.md
+demo-agent-skill\examples\example_ai_tool_demo
+demo-agent-skill\examples\example_game_demo
+demo-agent-skill\examples\example_react_app_demo
+demo-agent-skill\examples\example_ai_tool_demo\README.md
+demo-agent-skill\examples\example_game_demo\README.md
+demo-agent-skill\examples\example_react_app_demo\README.md
+demo-agent-skill\outputs\README.md
+demo-agent-skill\templates\demo_goal_template.md
+demo-agent-skill\templates\demo_plan_template.md
+demo-agent-skill\templates\demo_trace_template.md
+demo-agent-skill\templates\readme_demo_template.md
+demo-agent-skill\templates\verification_report_template.md
+demo-agent-skill\workflow\01_project_understanding.md
+demo-agent-skill\workflow\02_demo_planning.md
+demo-agent-skill\workflow\03_demo_execution.md
+demo-agent-skill\workflow\04_demo_verification.md
+demo-agent-skill\workflow\05_artifact_composition.md
+
+Command:
+python C:\Users\Vincent\.codex\skills\.system\skill-creator\scripts\quick_validate.py D:\Projects\demo_creater\demo-agent-skill
+
+Observed result:
+Skill is valid!
