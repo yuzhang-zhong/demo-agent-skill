@@ -11,8 +11,8 @@ Because this project is a documentation-first skill repository rather than a run
 From the workspace root:
 
 ```powershell
-Get-ChildItem -Recurse demo-agent-skill | ForEach-Object { $_.FullName.Replace('D:\Projects\demo_creater\','') }
-python C:\Users\Vincent\.codex\skills\.system\skill-creator\scripts\quick_validate.py D:\Projects\demo_creater\demo-agent-skill
+Get-ChildItem -Recurse demo-agent-skill | ForEach-Object { $_.FullName.Replace('<workspace>\','') }
+python <user>\.codex\skills\.system\skill-creator\scripts\quick_validate.py <workspace>\demo-agent-skill
 ```
 
 ## Included Artifacts
