@@ -1,9 +1,9 @@
 DemoAgent self-demo command evidence
 Date: 2026-06-09
-Workspace: D:\Projects\demo_creater
+Workspace: <workspace>
 
 Command:
-Get-ChildItem -Recurse demo-agent-skill | ForEach-Object { $_.FullName.Replace('D:\Projects\demo_creater\','') }
+Get-ChildItem -Recurse demo-agent-skill | ForEach-Object { $_.FullName.Replace('<workspace>\','') }
 
 Observed result:
 demo-agent-skill\examples
@@ -32,7 +32,7 @@ demo-agent-skill\workflow\04_demo_verification.md
 demo-agent-skill\workflow\05_artifact_composition.md
 
 Command:
-python C:\Users\Vincent\.codex\skills\.system\skill-creator\scripts\quick_validate.py D:\Projects\demo_creater\demo-agent-skill
+python <user>\.codex\skills\.system\skill-creator\scripts\quick_validate.py <workspace>\demo-agent-skill
 
 Observed result:
 Skill is valid!
