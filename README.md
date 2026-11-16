@@ -2,6 +2,8 @@
 
 # DemoAgent
 
+**English** · [简体中文](README.zh-CN.md)
+
 **Leave a demo another developer can inspect and rerun.**
 
 A documentation-first agent skill for turning software projects into clear, reproducible demo packages.
