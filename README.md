@@ -2,19 +2,23 @@
 
 # DemoAgent
 
-### Don't just record a demo. Leave evidence someone can rerun.
+**Don't just record a demo. Leave evidence someone can rerun.**
 
 A documentation-first agent skill for turning software projects into clear, reproducible demo packages.
 
-**Markdown-based · No runtime dependencies · Evidence before claims**
+[![Format](https://img.shields.io/badge/Format-Markdown-222222)](SKILL.md)
+[![Workflow](https://img.shields.io/badge/Workflow-5_guides-2563eb)](#the-workflow)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-[Start with the skill](SKILL.md) · [Inspect the self-demo](outputs/demoagent-self-demo/) · [Templates](templates/) · [Example plans](examples/)
+[Quick start](#quick-start) · [Start with the skill](SKILL.md) · [Inspect the self-demo](outputs/demoagent-self-demo/) · [Templates](templates/) · [Example plans](examples/)
 
 </div>
 
 ![DemoAgent workflow diagram: understand the project, plan the story, execute and capture evidence, verify outcomes, compose a reproducible package](docs/demo-workflow.svg)
 
 A screen recording shows what happened once. A useful demo also explains what to run, which inputs to use, what actually worked, and what remains untested. DemoAgent gives an agent a practical workflow for keeping those pieces together.
+
+**Markdown-based, with no runtime dependencies of its own.** The target project and capture tools still need their own setup. Evidence comes before claims throughout the workflow.
 
 > [!IMPORTANT]
 > **Current evidence is limited to this skill's own structure and an external validator result.** The checked-in self-demo has not tested DemoAgent against a real React app, CLI tool, API service, or game. The example folders are plans, not completed demonstrations. This repository does not include a recorder or a runnable demo app.
