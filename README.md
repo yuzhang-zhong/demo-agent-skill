@@ -2,23 +2,19 @@
 
 # DemoAgent
 
-**Don't just record a demo. Leave evidence someone can rerun.**
+**Leave a demo another developer can inspect and rerun.**
 
 A documentation-first agent skill for turning software projects into clear, reproducible demo packages.
 
-[![Format](https://img.shields.io/badge/Format-Markdown-222222)](SKILL.md)
-[![Workflow](https://img.shields.io/badge/Workflow-5_guides-2563eb)](#the-workflow)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 [Quick start](#quick-start) · [Start with the skill](SKILL.md) · [Inspect the self-demo](outputs/demoagent-self-demo/) · [Templates](templates/) · [Example plans](examples/)
 
 </div>
 
-![DemoAgent workflow diagram: understand the project, plan the story, execute and capture evidence, verify outcomes, compose a reproducible package](docs/demo-workflow.svg)
+A useful demo package records the setup, inputs, what ran, and what still needs checking. DemoAgent keeps the plan and evidence with the instructions for repeating the run.
 
-A screen recording shows what happened once. A useful demo also explains what to run, which inputs to use, what actually worked, and what remains untested. DemoAgent gives an agent a practical workflow for keeping those pieces together.
-
-**Markdown-based, with no runtime dependencies of its own.** The target project and capture tools still need their own setup. Evidence comes before claims throughout the workflow.
+The skill is Markdown-based and has no runtime dependencies of its own. The target project and capture tools still need their own setup.
 
 > [!IMPORTANT]
 > **Current evidence is limited to this skill's own structure and an external validator result.** The checked-in self-demo has not tested DemoAgent against a real React app, CLI tool, API service, or game. The example folders are plans, not completed demonstrations. This repository does not include a recorder or a runnable demo app.
@@ -64,6 +60,8 @@ Run that copy command from the parent directory of the clone. Skill loading and 
 
 ## The workflow
 
+![DemoAgent workflow diagram: understand the project, plan the story, execute and capture evidence, verify outcomes, compose a reproducible package](docs/demo-workflow.svg)
+
 | Guide | Work to do | Start from |
 | --- | --- | --- |
 | [01 · Understand](workflow/01_project_understanding.md) | Inspect source, setup, audience, risks, and the demo goal | [Goal template](templates/demo_goal_template.md) |
@@ -72,9 +70,10 @@ Run that copy command from the parent directory of the clone. Skill loading and 
 | [04 · Verify](workflow/04_demo_verification.md) | Compare observations with the plan; separate all outcome states | [Verification template](templates/verification_report_template.md) |
 | [05 · Compose](workflow/05_artifact_composition.md) | Package media, findings, limitations, and rerun instructions | [README template](templates/readme_demo_template.md) |
 
-The skill expands these five guides into seven explicit activities by giving goal clarification and evidence capture their own steps. It is one workflow, not two competing sequences.
+The skill's seven activities follow these five guides, with separate steps for clarifying the goal and capturing evidence.
 
-## Inspect the evidence, not a placeholder screenshot
+<a id="inspect-the-evidence-not-a-placeholder-screenshot"></a>
+## Self-demo and verification
 
 The [self-demo package](outputs/demoagent-self-demo/README.md) shows the artifact structure in use:
 
@@ -92,7 +91,8 @@ Its recorded result is **partially successful**: repository structure and skill 
 
 These are lightweight structures to adapt, not sample applications or verified videos.
 
-## A package worth handing off
+<a id="a-package-worth-handing-off"></a>
+## Demo package structure
 
 ```text
 demo/
