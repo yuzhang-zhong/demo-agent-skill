@@ -16,8 +16,8 @@ A useful demo package records the setup, inputs, what ran, and what still needs 
 
 The skill is Markdown-based and has no runtime dependencies of its own. The target project and capture tools still need their own setup.
 
-> [!IMPORTANT]
-> **Current evidence is limited to this skill's own structure and an external validator result.** The checked-in self-demo has not tested DemoAgent against a real React app, CLI tool, API service, or game. The example folders are plans, not completed demonstrations. This repository does not include a recorder or a runnable demo app.
+> [!NOTE]
+> **Documentation-only skill.** This repository provides workflows and templates, not a recorder or runnable demo app. The examples are plans; the checked-in self-demo covers repository structure and external skill validation only. See [verification](#self-demo-and-verification) for its scope.
 
 ## What you get
 
@@ -74,6 +74,8 @@ The skill's seven activities follow these five guides, with separate steps for c
 
 <a id="inspect-the-evidence-not-a-placeholder-screenshot"></a>
 ## Self-demo and verification
+
+Current evidence is limited to this skill's own structure and an external validator result. The checked-in self-demo has not tested DemoAgent against a real React app, CLI tool, API service, or game.
 
 The [self-demo package](outputs/demoagent-self-demo/README.md) shows the artifact structure in use:
 
